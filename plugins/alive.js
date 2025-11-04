@@ -3,18 +3,18 @@ const config = require('../config');
 
 cmd({
     pattern: "alive",
-    desc: "Check bot online or no.",
+    desc: "Welocome IMB and You can check your bot ONLINE or No .",
     category: "main",
     filename: __filename
 },
-async (danuwa, mek, m, {
+async (Thejan, mek, m, {
     from, quoted, body, isCmd, command, args, q, isGroup,
     sender, senderNumber, botNumber2, botNumber, pushname,
     isMe, isOwner, groupMetadata, groupName, participants,
     groupAdmins, isBotAdmins, isAdmins, reply
 }) => {
     try {
-        return await danuwa.sendMessage(from, {
+        return await Thejan.sendMessage(from, {
             image: { url: config.ALIVE_IMG },
             caption: config.ALIVE_MSG
         }, { quoted: mek });
