@@ -3,12 +3,12 @@ const { cmd, commands } = require("../command");
 cmd(
   {
     pattern: "menu",
-    desc: "Displays all available commands",
+    desc: "Hey Here Is Wishnu Bbh",
     category: "main",
     filename: __filename,
   },
   async (
-    danuwa,
+    Thejan,
     mek,
     m,
     {
@@ -29,10 +29,10 @@ cmd(
         });
       }
 
-      let menuText = "📋 *Available Commands:*\n";
+      let menuText = "📋 *Thejan Madhusanka Speed Bot:*\n";
 
       for (const [cat, cmds] of Object.entries(categories)) {
-        menuText += `\n📂 *${cat.toUpperCase()}*\n`;
+        menuText += `\n😼 *${cat.toUpperCase()}*\n`;
         cmds.forEach(c => {
           menuText += `- .${c.pattern} : ${c.desc}\n`;
         });
@@ -45,3 +45,4 @@ cmd(
     }
   }
 );
+
